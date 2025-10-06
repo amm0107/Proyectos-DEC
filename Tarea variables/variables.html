@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversión de Variables</title>
+</head>
+<body>
+
+    <script>
+        // Declaración de variables con distintos tipos de datos usando var
+        var numero = 42;
+        var cadena = "Hola";
+        var booleano = true;
+        var nulo = null;
+        var indefinido;
+        var numCad;
+        var cadNum;
+        var booleanoCero;
+        var booleanoTexto;
+
+        // Mostrar tipos en consola con el consolelog, el "typeof" indica el tipo de variable
+        console.log("El número es ", numero, " y su tipo es ", typeof numero);
+        console.log("La cadena es ", cadena, " y su tipo es ", typeof cadena);
+        console.log("El booleano es ", booleano, " y su tipo es ", typeof booleano);
+        console.log("El valor nulo es ", nulo, " y su tipo es ", typeof nulo);
+        console.log("El valor indefinido es ", indefinido, " y su tipo es ", typeof indefinido);
+
+        /* Ejemplos de conversión de tipos, para ello se crea una variable la cual la igualamos 
+           al tipo de variable deseada y le asignamos el valor deseado */
+        // Número a cadena
+        numCad = String(2025);
+        console.log("El número ", numCad, " es de tipo ", typeof numCad);
+
+        // Cadena a número
+        cadNum = Number("2025");
+        console.log('El número ', cadNum, " es de tipo ", typeof cadNum);
+
+        // Booleano a partir de 0
+        booleanoCero = Boolean(0);
+        console.log("El booleano de 0 es ", booleanoCero, " y su tipo es ", typeof booleanoCero);
+
+        // Booleano a partir de cadena no vacía
+        booleanoTexto = Boolean("buenas tardes");
+        console.log('El booleano del texto es ', booleanoTexto, " y su tipo es ", typeof booleanoTexto);
+    </script>
+</body>
+
+</html>
