@@ -32,7 +32,7 @@ function ejercicio5(): void {
         return total + producto.precio;
     }, 0);
     
-    console.log("Precio total de todos los productos: ${precioTotal.toFixed(2)}€");
+    console.log(`Precio total de todos los productos: ${precioTotal.toFixed(2)}€`);
 
 }
 

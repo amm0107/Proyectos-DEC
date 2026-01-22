@@ -17,7 +17,7 @@ function ejercicio5() {
     var precioTotal = productos.reduce(function (total, producto) {
         return total + producto.precio;
     }, 0);
-    console.log("Precio total de todos los productos: ${precioTotal.toFixed(2)}€");
+    console.log("Precio total de todos los productos: ".concat(precioTotal.toFixed(2), "\u20AC"));
 }
 // Con el document.getElementById, tomamos el botón del ejercicio 5 y con el addEventListener indicamos que haciendo click sobre él, se ejecute la función
 (_a = document.getElementById("btn5")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", ejercicio5);
